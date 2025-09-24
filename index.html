@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PVR Coupon Validator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Add your custom styles or use previous styling */
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="bi bi-ticket-perforated"></i> PVR Coupon Validator</h4>
+            <small>Bootstrap 5 + Vanilla JS | Dynamic Booking Inputs</small>
+          </div>
+          <div class="card-body">
+            <!-- Configuration & Booking Data Section -->
+            <div class="row mb-3">
+              <div class="col-md-3 mb-2">
+                <label for="bookingId">Booking ID</label>
+                <input type="text" class="form-control" id="bookingId" placeholder="Enter Booking ID" required>
+              </div>
+              <div class="col-md-3 mb-2">
+                <label for="transId">Transaction ID</label>
+                <input type="text" class="form-control" id="transId" placeholder="Enter Transaction ID" required>
+              </div>
+              <div class="col-md-3 mb-2">
+                <label for="ccode">Cinema Code (ccode)</label>
+                <input type="text" class="form-control" id="ccode" value="284" placeholder="Cinema Code" required>
+              </div>
+              <div class="col-md-3 mb-2">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" value="Hyderabad" placeholder="City" required>
+              </div>
+            </div>
+            <!-- Existing configuration for coupon testing goes here (maxCoupons, rateLimit, length etc.) -->
+            <!-- ... -->
+            <!-- Add your Start/Stop, Log, Download buttons and sections -->
+            <!-- ... -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
